@@ -379,6 +379,11 @@ textarea {
 /* =============
     Logo
 ============= */
+#logo > div svg #volkswagenLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 /* =============
     Background
 ============= */
