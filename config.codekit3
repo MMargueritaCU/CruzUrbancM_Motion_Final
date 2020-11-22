@@ -76,14 +76,6 @@
 		"oAP": "/design/dashboard_design_final.sketch",
 		"oF": 0
 		},
-	"/dev/content/background.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/content/background.html",
-		"oF": 0
-		},
 	"/dev/content/dashboard.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -92,68 +84,68 @@
 		"oAP": "/dev/content/dashboard.html",
 		"oF": 0
 		},
-	"/dev/content/fuel.kit": {
+	"/dev/content/svg/fuel.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/dev/content/fuel.html",
+		"oAP": "/dev/content/svg/fuel.html",
 		"oF": 0
 		},
-	"/dev/content/gearShift.kit": {
+	"/dev/content/svg/gearShift.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/dev/content/gearShift.html",
+		"oAP": "/dev/content/svg/gearShift.html",
 		"oF": 0
 		},
-	"/dev/content/logo.kit": {
+	"/dev/content/svg/logo.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/dev/content/logo.html",
+		"oAP": "/dev/content/svg/logo.html",
 		"oF": 0
 		},
-	"/dev/content/music.kit": {
+	"/dev/content/svg/music.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/dev/content/music.html",
+		"oAP": "/dev/content/svg/music.html",
 		"oF": 0
 		},
-	"/dev/content/speedometer.kit": {
+	"/dev/content/svg/speedometer.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/dev/content/speedometer.html",
+		"oAP": "/dev/content/svg/speedometer.html",
 		"oF": 0
 		},
-	"/dev/content/tachometer.kit": {
+	"/dev/content/svg/tachometer.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/dev/content/tachometer.html",
+		"oAP": "/dev/content/svg/tachometer.html",
 		"oF": 0
 		},
-	"/dev/content/temperature.kit": {
+	"/dev/content/svg/temperature.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/dev/content/temperature.html",
+		"oAP": "/dev/content/svg/temperature.html",
 		"oF": 0
 		},
-	"/dev/content/turnSignal.kit": {
+	"/dev/content/svg/turnSignal.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/dev/content/turnSignal.html",
+		"oAP": "/dev/content/svg/turnSignal.html",
 		"oF": 0
 		},
 	"/dev/global/head.kit": {
@@ -328,19 +320,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/layout/_header.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/dev/scss/sections/_background.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/dev/scss/sections/_background.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

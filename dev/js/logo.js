@@ -28,7 +28,7 @@ export function logoAnimation(){
             .to("#morphCircle2", {duration:0.5, morphSVG:"#bottomW", fill:"#C9FF00"}, "logoMorph");
 
     logoTL.to("#outerCircle", {duration:2, ease:"none", drawSVG: "0%"}, "+=1.5");
-    logoTL.to("#innerCircle", {duration:2, ease:"none", drawSVG: "0%"}, "+=1.5");
+    logoTL.to("#innerCircle", {duration:2, ease:"none", drawSVG: "0%"});
 
     logoTL.to("#topV", {duration:0.5, morphSVG:"#morphCircle1", ease: "bounce.out", fill:"#C9FF00"})
         .to("#morphCircle1", {duration:0.5, y:-300, ease: "none"});
