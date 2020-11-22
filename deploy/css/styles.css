@@ -379,10 +379,14 @@ textarea {
 /* =============
     Logo
 ============= */
-#logo > div svg #volkswagenLogo {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+#logo > div {
+  position: relative; }
+  #logo > div svg {
+    position: absolute; }
+    #logo > div svg #volkswagenLogo {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
 
 /* =============
     Background
@@ -392,4 +396,5 @@ textarea {
   background-position: center;
   background-repeat: repeat;
   background-size: auto;
-  height: 1000px; }
+  height: 1000px;
+  position: absolute; }

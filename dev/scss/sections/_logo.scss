@@ -5,7 +5,11 @@
 #logo{
 
     >div{
+        position: relative;
+
         svg{
+            position: absolute;
+            
             #volkswagenLogo{
                 display: flex;
                 justify-content: center;
