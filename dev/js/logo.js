@@ -5,6 +5,8 @@ import {MorphSVGPlugin} from "gsap/MorphSVGPlugin";
 gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(MorphSVGPlugin);
 
+MorphSVGPlugin.convertToPath("circle, rect, ellipse, line, polygon, polyline");
+
 gsap.set("#outerCircle", {transformOrigin: "center"});
 gsap.set("#innerCircle", {transformOrigin: "center"});
 
@@ -19,17 +21,29 @@ export function logoAnimation(){
         .to("#innerCircle", {duration:2, ease:"none", drawSVG: "100%"}, "circleDraw2")
         .to("#innerCircle", {duration:0.125, stroke: "#89ff00"}, "lightUp");
 
-    logoTL.from("#morphCircle1", {duration:2, y:-300, ease: "none"}, "circleDraw2")
-            .to("#morphCircle1", {duration:2, morphSVG:"#topV", ease: "bounce.out"});
+    logoTL.from("#morphCircle1", {duration:2, y:-300, ease: "bounce.out"}, "circleDraw2")
+            .to("#morphCircle1", {duration:0.5, morphSVG:"#topV", fill:"#C9FF00"}, "logoMorph");
 
-    logoTL.from("#morphCircle2", {duration:2, y:300, ease:"none"}, "circleDraw2")
-            .to("#morphCircle2", {duration:2, morphSVG:"#bottomW", ease:"bounce.out"});
+    logoTL.from("#morphCircle2", {duration:2, y:300, ease:"bounce.out"}, "circleDraw2")
+            .to("#morphCircle2", {duration:0.5, morphSVG:"#bottomW", fill:"#C9FF00"}, "logoMorph");
 
-    // logoTL.to("#morphCircle1", {duration:2, morphSVG:"#topV"});
-    // logoTL.to("#morphCircle2", {duration:2, morphSVG:"#bottomW"});
+    logoTL.to("#outerCircle", {duration:2, ease:"none", drawSVG: "0%"}, "+=1.5");
+    logoTL.to("#innerCircle", {duration:2, ease:"none", drawSVG: "0%"}, "+=1.5");
+
+    logoTL.to("#topV", {duration:0.5, morphSVG:"#morphCircle1", ease: "bounce.out", fill:"#C9FF00"})
+        .to("#morphCircle1", {duration:0.5, y:-300, ease: "none"});
+
+    logoTL.to("#bottomW", {duration:0.5, morphSVG:"#morphCircle2", ease: "bounce.out", fill:"#C9FF00"})
+        .to("#morphCircle2", {duration:0.5, y:300, ease: "none"});
+
+    // logoTL.to("#topV", {duration:2, morphSVG:"#morphCircle1"});
+    // logoTL.to("#bottomW", {duration:2, morphSVG:"#morphCircle1"});
 
     // logoTL.from("#topV", {duration:0.125, alpha:0}, "lightUp");
     // logoTL.from("#bottomW", {duration:0.125, alpha:0}, "lightUp");
+
+    logoTL.to("#volkswagenLogo", {duration:0.125, alpha:0});
+    logoTL.to("#blackBackground", {duration:0.125, alpha:0});
 
 
 

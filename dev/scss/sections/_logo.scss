@@ -9,11 +9,20 @@
 
         svg{
             position: absolute;
+            // visibility: hidden;
             
             #volkswagenLogo{
                 display: flex;
                 justify-content: center;
                 align-items: center;
+            }
+
+            #topV{
+                visibility: hidden;
+            }
+
+            #bottomW{
+                visibility: hidden;
             }
         }
     }
