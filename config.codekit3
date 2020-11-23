@@ -84,6 +84,14 @@
 		"oAP": "/dev/content/dashboard.html",
 		"oF": 0
 		},
+	"/dev/content/logo.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/logo.html",
+		"oF": 0
+		},
 	"/dev/content/svg/fuel.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -98,14 +106,6 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/content/svg/gearShift.html",
-		"oF": 0
-		},
-	"/dev/content/svg/logo.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/content/svg/logo.html",
 		"oF": 0
 		},
 	"/dev/content/svg/music.kit": {
@@ -346,6 +346,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/sections/_logo.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_svg-container.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_svg-container.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

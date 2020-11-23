@@ -2,28 +2,28 @@
     Logo
 ============= */
 
-#logo{
+// #logo{
 
-    >div{
-        position: relative;
+//     >div{
+//         position: relative;
 
-        svg{
-            position: absolute;
-            // visibility: hidden;
+//         svg{
+//             position: absolute;
+//             // visibility: hidden;
             
-            #volkswagenLogo{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+//             #volkswagenLogo{
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//             }
 
-            #topV{
-                visibility: hidden;
-            }
+//             #topV, #topV-2{
+//                 visibility: hidden;
+//             }
 
-            #bottomW{
-                visibility: hidden;
-            }
-        }
-    }
-}
+//             #bottomW{
+//                 visibility: hidden;
+//             }
+//         }
+//     }
+// }

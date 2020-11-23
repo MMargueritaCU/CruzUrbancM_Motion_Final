@@ -1,0 +1,27 @@
+#svg-container{
+        background-image: url(../../../deploy/img/diamond_bkgd2.jpg);
+        background-position: center;
+        background-repeat: repeat;
+        background-size: auto;
+        height: 100vh;
+        // height: 1000px;
+    
+        display: grid;
+        grid-template-columns: auto 80% auto;
+        grid-template-areas: ". svg .";
+        
+        >div{
+            grid-area: svg;
+            // height: 100vh;
+            position: relative;
+            border: 1px solid red;
+            width: 100%;
+    
+            svg{
+                width: 100%;
+                position: absolute;
+                top:0;
+                left:0;
+            }
+        }
+}
