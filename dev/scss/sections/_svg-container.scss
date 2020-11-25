@@ -1,27 +1,40 @@
 #svg-container{
-        background-image: url(../../../deploy/img/diamond_bkgd2.jpg);
-        background-position: center;
-        background-repeat: repeat;
-        background-size: auto;
-        height: 100vh;
-        // height: 1000px;
+        // background-image: url(../../../deploy/img/diamond_bkgd2.jpg);
+        // background-position: center;
+        // background-repeat: repeat;
+        // background-size: auto;
+        // height: 100vh;
     
         display: grid;
-        grid-template-columns: auto 80% auto;
+        grid-template-columns: auto 67.5% auto;
         grid-template-areas: ". svg .";
         
         >div{
+            background-image: url(../../../deploy/img/diamond_bkgd2.jpg);
+            background-position: center;
+            background-repeat: repeat;
+            background-size: auto;
+            height: 100vh;
             grid-area: svg;
-            // height: 100vh;
             position: relative;
-            border: 1px solid red;
+            // border: 1px solid red;
             width: 100%;
+            // width: 1024px;
     
             svg{
                 width: 100%;
                 position: absolute;
                 top:0;
                 left:0;
+                height: 100%;
+
+                #topV{
+                    visibility: hidden;
+                }
+    
+                #bottomW{
+                    visibility: hidden;
+                }
             }
         }
 }
