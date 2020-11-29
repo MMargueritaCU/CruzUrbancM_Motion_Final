@@ -406,26 +406,23 @@ textarea {
 /* =============
     Dashboard
 ============= */
-#fuel, #Percent, #fuelFill, #bottomLiquid, #topLiquid {
+#fuel, #Percent, #bottomLiquid, #topLiquid {
   visibility: hidden; }
 
-#pShift, #rShift, #nShift, #dShift {
+#dodieSong {
   visibility: hidden; }
 
-#dodieSong, #musicFill {
+#speedIndicators, #kmh {
   visibility: hidden; }
 
-#speedIndicators, #kmh, #speedFill {
+#rotationIndicators, #rpm {
   visibility: hidden; }
 
-#rotationIndicators, #rpm, #tachFill {
+#coldDot, #coolDot, #warmDot, #hotDot {
   visibility: hidden; }
 
-#coldDot, #coolDot, #warmDot, #hotDot, #tempFill {
+#rightTurnLight {
   visibility: hidden; }
 
-#rightTurnFill, #rightTurnLight {
-  visibility: hidden; }
-
-#leftTurnFill, #leftTurnLight {
+#leftTurnLight {
   visibility: hidden; }

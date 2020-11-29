@@ -10,8 +10,8 @@ gsap.registerPlugin(GSDevTools);
 
 const mainTL = gsap.timeline()
 mainTL.add(logoAnimation());
-mainTL.add(primaryOutlineAnimation());
-mainTL.add(secondaryOutlineAnimation());
+mainTL.add(primaryOutlineAnimation(), "start");
+mainTL.add(secondaryOutlineAnimation(), "start, -=3.5");
 mainTL.add(tertiaryOutlineAnimation());
 
 GSDevTools.create();
