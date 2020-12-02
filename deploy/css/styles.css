@@ -406,16 +406,16 @@ textarea {
 /* =============
     Dashboard
 ============= */
-#fuel, #Percent, #bottomLiquid, #topLiquid {
+#Percent, #bottomLiquid, #topLiquid {
   visibility: hidden; }
 
 #dodieSong {
   visibility: hidden; }
 
-#speedIndicators, #kmh {
+#speedIndicators {
   visibility: hidden; }
 
-#rotationIndicators, #rpm {
+#rotationIndicators {
   visibility: hidden; }
 
 #coldDot, #coolDot, #warmDot, #hotDot {

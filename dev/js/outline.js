@@ -76,6 +76,9 @@ export function tertiaryOutlineAnimation(){
     tertiaryOutlineTL.from("#rShift", {duration:0.25, rotate:360, scale:0, ease:"none"});
     tertiaryOutlineTL.from("#nShift", {duration:0.25, rotate:360, scale:0, ease:"none"});
     tertiaryOutlineTL.from("#dShift", {duration:0.25, rotate:360, scale:0, ease:"none"});
+    tertiaryOutlineTL.from("#kmh", {duration:0.25, alpha: 0, ease:"none"}, "labels");
+    tertiaryOutlineTL.from("#rpm", {duration:0.25, alpha: 0, ease:"none"}, "labels");
+    tertiaryOutlineTL.from("#fuel", {duration:0.25, alpha: 0, ease:"none"}, "labels");
 
     tertiaryOutlineTL.from("#rightTurnOutline", {duration:1, drawSVG:"0%", ease: "none"}, "secondOutline");
     tertiaryOutlineTL.from("#rightTurnFill", {duration:0.25, alpha:0, scale:0, ease: "none"}, "fillThird");
@@ -93,7 +96,56 @@ export function tertiaryOutlineAnimation(){
     tertiaryOutlineTL.to("#rightTurnOutline", {duration:0.25, stroke: brightGreen1}, "lightUp3");
     tertiaryOutlineTL.to("#leftTurnOutline", {duration:0.25, stroke: brightGreen1}, "lightUp3");
 
-    tertiaryOutlineTL.to("#pShift", {duration:0.25, fill:brightOrange, ease:"none"});
+    tertiaryOutlineTL.to("#kmh", {duration:0.25, fill:brightGreen1, ease:"none"}, "lightUp4");
+    tertiaryOutlineTL.to("#rpm", {duration:0.25, fill:brightGreen1, ease:"none"}, "lightUp4");
+    tertiaryOutlineTL.to("#fuel", {duration:0.25, fill:brightGreen1, ease:"none"}, "lightUp4");
+
+    tertiaryOutlineTL.to("#pShift", {duration:0.25, fill:brightOrange, ease:"none"}, "lightUp4");
 
     return tertiaryOutlineTL;
 }
+
+// const indicatorsTL = gsap.timeline();
+// export function indicatorsAnimation(){
+
+//     indicatorsTL.from("#10Indicator", {duration:0.05, alpha:0, ease:"none"}, "10");
+//     indicatorsTL.from("#10Number", {duration:0.05, alpha:0, ease:"none"}, "10");
+
+//     indicatorsTL.from("#20Indicator", {duration:0.05, alpha:0, ease:"none"}, "20");
+//     indicatorsTL.from("#20Number", {duration:0.05, alpha:0, ease:"none"}, "20");
+
+//     indicatorsTL.from("#30Indicator", {duration:0.05, alpha:0, ease:"none"}, "30");
+//     indicatorsTL.from("#30Number", {duration:0.05, alpha:0, ease:"none"}, "30");
+
+//     indicatorsTL.from("#40Indicator", {duration:0.05, alpha:0, ease:"none"}, "40");
+//     indicatorsTL.from("#40Number", {duration:0.05, alpha:0, ease:"none"}, "40");
+
+//     indicatorsTL.from("#50Indicator", {duration:0.05, alpha:0, ease:"none"}, "50");
+//     indicatorsTL.from("#50Number", {duration:0.05, alpha:0, ease:"none"}, "50");
+
+//     indicatorsTL.from("#60Indicator", {duration:0.05, alpha:0, ease:"none"}, "60");
+//     indicatorsTL.from("#60Number", {duration:0.05, alpha:0, ease:"none"}, "60");
+
+//     indicatorsTL.from("#70Indicator", {duration:0.05, alpha:0, ease:"none"}, "70");
+//     indicatorsTL.from("#70Number", {duration:0.05, alpha:0, ease:"none"}, "70");
+
+//     indicatorsTL.from("#80Indicator", {duration:0.05, alpha:0, ease:"none"}, "80");
+//     indicatorsTL.from("#80Number", {duration:0.05, alpha:0, ease:"none"}, "80");
+
+//     indicatorsTL.from("#90Indicator", {duration:0.05, alpha:0, ease:"none"}, "90");
+//     indicatorsTL.from("#90Number", {duration:0.05, alpha:0, ease:"none"}, "90");
+
+//     indicatorsTL.from("#100Indicator", {duration:0.05, alpha:0, ease:"none"}, "100");
+//     indicatorsTL.from("#100Number", {duration:0.05, alpha:0, ease:"none"}, "100");
+
+//     indicatorsTL.from("#110Indicator", {duration:0.05, alpha:0, ease:"none"}, "110");
+//     indicatorsTL.from("#110Number", {duration:0.05, alpha:0, ease:"none"}, "110");
+
+//     indicatorsTL.from("#120Indicator", {duration:0.05, alpha:0, ease:"none"}, "120");
+//     indicatorsTL.from("#120Number", {duration:0.05, alpha:0, ease:"none"}, "120");
+
+//     indicatorsTL.from("#130Indicator", {duration:0.05, alpha:0, ease:"none"}, "130");
+//     indicatorsTL.from("#130Number", {duration:0.05, alpha:0, ease:"none"}, "130");
+
+//     return indicatorsTL;
+// }
