@@ -406,16 +406,7 @@ textarea {
 /* =============
     Dashboard
 ============= */
-#Percent, #bottomLiquid, #topLiquid {
-  visibility: hidden; }
-
 #dodieSong {
-  visibility: hidden; }
-
-.bars {
-  visibility: hidden; }
-
-#rotationIndicators {
   visibility: hidden; }
 
 #coldDot, #coolDot, #warmDot, #hotDot {

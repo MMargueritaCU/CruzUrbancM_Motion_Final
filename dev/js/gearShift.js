@@ -12,10 +12,10 @@ export function gearShiftAnimation(){
     gearShiftTL.to("#pShift", {duration:0.25, fill:dullOrange, ease:"none"});
 
     gearShiftTL.to("#rShift", {duration:0.25, fill:brightOrange, ease:"none"});
-    gearShiftTL.to("#rShift", {duration:0.25, fill:dullOrange, ease:"none"}, "+=0.5");
+    gearShiftTL.to("#rShift", {duration:0.25, fill:dullOrange, ease:"none"}, "+=0.25");
 
     gearShiftTL.to("#nShift", {duration:0.25, fill:brightOrange, ease:"none"});
-    gearShiftTL.to("#nShift", {duration:0.25, fill:dullOrange, ease:"none"}, "+=0.5");
+    gearShiftTL.to("#nShift", {duration:0.25, fill:dullOrange, ease:"none"}, "+=0.25");
 
     gearShiftTL.to("#dShift", {duration:0.25, fill:brightOrange, ease:"none"});
 
