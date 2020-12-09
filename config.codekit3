@@ -116,6 +116,14 @@
 		"oAP": "/dev/content/svg/music.html",
 		"oF": 0
 		},
+	"/dev/content/svg/musicBoard.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/svg/musicBoard.html",
+		"oF": 0
+		},
 	"/dev/content/svg/speedometer.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -177,7 +185,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dev/js/fuel-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -212,6 +220,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/dev/js/music-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/musicBoard.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/musicBoard-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -276,7 +295,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dev/js/turnSignal-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -473,6 +492,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/sections/_music.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_musicBoard.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_musicBoard.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

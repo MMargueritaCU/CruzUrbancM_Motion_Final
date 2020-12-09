@@ -409,11 +409,27 @@ textarea {
 #dodieSong {
   visibility: hidden; }
 
+#music-background, #musicSection {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%; }
+
+.fast-bars {
+  visibility: hidden; }
+
 #coldDot, #coolDot, #warmDot, #hotDot {
   visibility: hidden; }
 
-#rightTurnLight {
+#leftTurnLight {
   visibility: hidden; }
 
-#leftTurnLight {
+#musicInnerRing1-large, #musicInnerRing2-large, #musicRing2-long, #musicRing2-short, #musicRing3-long, #musicRing3-short, #musicRing4, #musicRing5 {
+  visibility: hidden; }
+
+#cool-girl, #dodie-music, #ready-now, #monster, #guiltless, #boys-like-you, #human, #burned-out, #arms-unfolding {
+  visibility: hidden; }
+
+#music-background {
   visibility: hidden; }

@@ -117,8 +117,6 @@ export function indicatorsAnimation(){
     indicatorsTL.from(".tach-number", {duration:0.05, alpha:0, ease:"none", stagger:0.1}, "indicators2");
 
     indicatorsTL.from("#bottomLiquid", {duration:0.25, alpha:0, scale:0, rotate:360}, "indicators");
-    indicatorsTL.from("#topLiquid", {duration:0.5, drawSVG: "0%", ease: "none"}, "indicators2");
-    indicatorsTL.from("#Percent", {duration:0.25, alpha:0});
 
     return indicatorsTL;
 }
