@@ -12,6 +12,9 @@ import {tachometerAnimation} from "./tachometer.js";
 import {turnAnimation} from "./turnSignal.js";
 import {fuelAnimation} from "./fuel.js";
 import {musicBoardAnimation} from "./musicBoard.js";
+import {musicAnimation} from "./music.js";
+import {speedometerSecondAnimation} from "./speedometer.js";
+import {tachometerSecondAnimation} from "./tachometer.js";
 
 gsap.registerPlugin(GSDevTools);
 
@@ -27,5 +30,8 @@ mainTL.add(tachometerAnimation(), "start2");
 mainTL.add(turnAnimation(), "start2, -=5");
 mainTL.add(fuelAnimation(), "start2");
 mainTL.add(musicBoardAnimation());
+mainTL.add(musicAnimation(), "start3");
+mainTL.add(speedometerSecondAnimation(), "start3");
+mainTL.add(tachometerSecondAnimation(), "start3");
 
 GSDevTools.create();
