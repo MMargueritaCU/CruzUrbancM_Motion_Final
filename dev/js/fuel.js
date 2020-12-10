@@ -11,3 +11,12 @@ export function fuelAnimation(){
 
     return fuelTL;
 }
+
+const fuelSecondTL = gsap.timeline();
+export function fuelSecondAnimation(){
+    
+    fuelSecondTL.to("#Percent", {duration:0.25, alpha:0});
+    fuelSecondTL.to("#topLiquid", {duration:0.5, drawSVG: "0%", ease: "none"});
+
+    return fuelSecondTL;
+}

@@ -87,7 +87,7 @@ export function tertiaryOutlineAnimation(){
     tertiaryOutlineTL.from("#leftTurnOutline", {duration:0.5, drawSVG:"0%", ease: "none"}, "secondOutline");
     tertiaryOutlineTL.from("#leftTurnFill", {duration:0.25, alpha:0, scale:0, ease: "none"}, "fillThird");
 
-    tertiaryOutlineTL.to("#tempOutline", {duration:0.25, stroke: brightGreen1}, "lightUp3");
+    tertiaryOutlineTL.to("#tempOutline", {duration:0.25, stroke: brightOrange}, "lightUp3");
 
     tertiaryOutlineTL.to("#musicOuterRing", {duration:0.25, stroke: brightOrange}, "lightUp3");
     tertiaryOutlineTL.to("#musicInnerRing1", {duration:0.25, stroke: brightOrange}, "lightUp3");
@@ -119,4 +119,64 @@ export function indicatorsAnimation(){
     indicatorsTL.from("#bottomLiquid", {duration:0.25, alpha:0, scale:0, rotate:360}, "indicators");
 
     return indicatorsTL;
+}
+
+const indicatorsSecondTL = gsap.timeline();
+export function indicatorsSecondAnimation(){
+
+    indicatorsSecondTL.to(".indicator", {duration:0.05, alpha:0, ease:"none", reversed:true, stagger:0.1}, "indicators3");
+    indicatorsSecondTL.to(".number", {duration:0.05, alpha:0, ease:"none", reversed:true, stagger:0.1}, "indicators3");
+
+    indicatorsSecondTL.to(".rings", {duration:0.25, alpha:0, rotate: 360, ease:"none", stagger:0.1}, "indicators3");
+    indicatorsSecondTL.to(".tach-number", {duration:0.05, alpha:0, ease:"none", reversed:true, stagger:0.1}, "indicators3");
+
+    indicatorsSecondTL.to("#bottomLiquid", {duration:0.25, alpha:0, scale:0, rotate:360}, "indicators3");
+
+    return indicatorsSecondTL;
+}
+
+const lastOutlineTL = gsap.timeline();
+export function lastOutlineAnimation(){
+
+    lastOutlineTL.to("#kmh", {duration:0.1, alpha:0}, "lastFade");
+    lastOutlineTL.to("#rpm", {duration:0.1, alpha:0}, "lastFade");
+    lastOutlineTL.to("#fuel", {duration:0.1, alpha:0}, "lastFade");
+
+    lastOutlineTL.to("#pShift", {duration:0.1, alpha:0, rotate:360, scale:0}, "lastFade");
+    lastOutlineTL.to("#rShift", {duration:0.1, alpha:0, rotate:360, scale:0}, "lastFade");
+    lastOutlineTL.to("#nShift", {duration:0.1, alpha:0, rotate:360, scale:0}, "lastFade");
+    lastOutlineTL.to("#dShift", {duration:0.1, alpha:0, rotate:360, scale:0}, "lastFade");
+
+    lastOutlineTL.to("#connector", {duration:1, drawSVG:"0%"}, "lastDraw");
+
+    lastOutlineTL.to("#rightTurnOutline", {duration:1, drawSVG:"0%"}, "lastDraw");
+    lastOutlineTL.to("#leftTurnOutline", {duration:1, drawSVG:"0%"}, "lastDraw");
+    lastOutlineTL.to("#rightTurnFill", {duration:1, alpha:0, scale:0}, "lastFill");
+    lastOutlineTL.to("#leftTurnFill", {duration:1, alpha:0, scale:0}, "lastFill");
+
+    lastOutlineTL.to("#musicOuterRing", {duration:1, drawSVG:"0%"}, "lastDraw");
+    lastOutlineTL.to("#musicInnerRing1", {duration:1, drawSVG:"0%"}, "lastDraw");
+    lastOutlineTL.to("#musicInnerRing2", {duration:1, drawSVG:"0%"}, "lastDraw");
+    lastOutlineTL.to("#musicFill", {duration:1, alpha:0, scale:0}, "lastFill");
+
+    lastOutlineTL.to("#tempOutline", {duration:1, drawSVG:"0%"}, "lastDraw");
+    lastOutlineTL.to("#tempFill", {duration:1, alpha:0, scale:0}, "lastFill");
+
+    lastOutlineTL.to("#tachOuterRing", {duration:1, drawSVG:"0%"}, "lastDraw");
+    lastOutlineTL.to("#tachInnerRing1", {duration:1, drawSVG:"0%"}, "lastDraw");
+    lastOutlineTL.to("#tachInnerRing2", {duration:1, drawSVG:"0%"}, "lastDraw");
+    lastOutlineTL.to("#tachFill", {duration:1, alpha:0, scale:0}, "lastFill");
+
+    lastOutlineTL.to("#speedOuterRing", {duration:1, drawSVG:"0%"}, "lastDraw");
+    lastOutlineTL.to("#speedInnerRing", {duration:1, drawSVG:"0%"}, "lastDraw");
+    lastOutlineTL.to("#speedFill", {duration:1, alpha:0, scale:0}, "lastFill");
+
+    lastOutlineTL.to("#fuelOuterRing", {duration:1, drawSVG:"0%"}, "lastDraw");
+    lastOutlineTL.to("#fuelInnerRing1", {duration:1, drawSVG:"0%"}, "lastDraw");
+    lastOutlineTL.to("#fuelInnerRing2", {duration:1, drawSVG:"0%"}, "lastDraw");
+    lastOutlineTL.to("#fuelFill", {duration:1, alpha:0, scale:0}, "lastFill");
+
+    lastOutlineTL.to("#blackBackground", {duration:1, alpha:1});
+
+    return lastOutlineTL;
 }

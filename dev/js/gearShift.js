@@ -1,10 +1,7 @@
 import {gsap} from "gsap";
 
-// var brightGreen1 = "#00FF7F";
-// var brightGreen2 = "#89FF00";
 var brightOrange = "#FFB000";
 var dullOrange = "#5C4D35";
-// var brightYellow = "#FFF800";
 
 const gearShiftTL = gsap.timeline();
 export function gearShiftAnimation(){
@@ -21,4 +18,21 @@ export function gearShiftAnimation(){
 
 
     return gearShiftTL;
+}
+
+const gearShiftSecondTL = gsap.timeline();
+export function gearShiftSecondAnimation(){
+
+    gearShiftSecondTL.to("#dShift", {duration:0.25, fill:dullOrange, ease:"none"});
+
+    gearShiftSecondTL.to("#nShift", {duration:0.25, fill:brightOrange, ease:"none"});
+    gearShiftSecondTL.to("#nShift", {duration:0.25, fill:dullOrange, ease:"none"}, "+=0.25");
+
+    gearShiftSecondTL.to("#rShift", {duration:0.25, fill:brightOrange, ease:"none"});
+    gearShiftSecondTL.to("#rShift", {duration:0.25, fill:dullOrange, ease:"none"}, "+=0.25");
+
+    gearShiftSecondTL.to("#pShift", {duration:0.25, fill:brightOrange, ease:"none"});
+
+
+    return gearShiftSecondTL;
 }

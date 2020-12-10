@@ -406,8 +406,3 @@ textarea {
 /* =============
     Dashboard
 ============= */
-#coldDot, #coolDot, #warmDot, #hotDot {
-  visibility: hidden; }
-
-#leftTurnLight {
-  visibility: hidden; }
