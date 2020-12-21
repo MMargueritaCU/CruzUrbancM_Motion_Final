@@ -1,5 +1,5 @@
 import {gsap} from "gsap";
-import {GSDevTools} from "gsap/GSDevTools";
+// import {GSDevTools} from "gsap/GSDevTools";
 
 import {logoAnimation} from "./logo.js";
 import {primaryOutlineAnimation} from "./outline.js";
@@ -24,7 +24,7 @@ import {tempLastAnimation} from "./temperature.js";
 import {indicatorsSecondAnimation} from "./outline.js";
 import {lastOutlineAnimation} from "./outline.js";
 
-gsap.registerPlugin(GSDevTools);
+// gsap.registerPlugin(GSDevTools);
 
 const mainTL = gsap.timeline()
 mainTL.add(logoAnimation());
@@ -50,4 +50,4 @@ mainTL.add(tempLastAnimation());
 mainTL.add(indicatorsSecondAnimation());
 mainTL.add(lastOutlineAnimation());
 
-GSDevTools.create();
+// GSDevTools.create();
